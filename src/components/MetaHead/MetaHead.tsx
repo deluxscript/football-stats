@@ -1,7 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 
-import Favicon from '../../images/icon/favicon.png'
+import Favicon from '../../assets/images/icon/favicon.png'
 
 type HTMLHeadProps = {
   title: string;

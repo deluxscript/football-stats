@@ -1,0 +1,51 @@
+@use './assets/styles/colors.scss';
+@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara&display=swap');
+
+$hind-vadodara: 'Hind Vadodara', serif;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: $hind-vadodara;
+}
+
+body {
+  background-color: colors.$color-bg;
+}
+
+//body {
+//  min-height: 100vh;
+//  margin: 0 auto;
+//  font-family: 'Exo 2', sans-serif;
+//  font-size: 14px;
+//  line-height: 1.2;
+//  background-image: url('./assets/images/main-bg.png');
+//  background-size: cover;
+//  background-position: center;
+//  background-repeat: no-repeat;
+//}
+
+#root {
+  height: 100%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
