@@ -1,0 +1,12 @@
+@use '../../assets/styles/colors';
+
+.country-list {
+  width: 20%;
+  background-color: colors.$color-white;
+  border-radius: 5px;
+  height: fit-content;
+
+  &__content {
+    padding: 15px;
+  }
+}

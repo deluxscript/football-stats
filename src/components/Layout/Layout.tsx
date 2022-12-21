@@ -5,6 +5,8 @@ import { Footer } from '../Footer/Footer'
 import { Header } from '../Header/Header'
 import { MetaHead } from '../MetaHead/MetaHead'
 
+import './Layout.scss'
+
 type LayoutProps = {
   children?: React.ReactNode
 }
@@ -13,7 +15,7 @@ export const Layout: FC<LayoutProps> = ({ children }) => {
     <>
       <MetaHead title={title} description={description} keywords={keywords} />
       <Header />
-      <div className='bg-contentPage h-hero xxs:p-5 lg:p-0'>{children}</div>
+      <div className='layout'>{children}</div>
       <Footer />
     </>
   )

@@ -1,0 +1,58 @@
+@use '../../assets/styles/colors';
+
+.fixture-list {
+  width: 60%;
+  background-color: colors.$color-white;
+  border-radius: 5px;
+  margin: 0 20px;
+
+  &__content {
+    padding: 15px;
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 30px;
+
+      &-tabs {
+        display: flex;
+
+        &-item {
+          flex: 1;
+          min-width: initial;
+          font-size: 0.875em;
+        }
+      }
+    }
+  }
+}
+
+.react-datepicker__input-container input {
+  border-radius: 20px;
+  padding: 8px 10px;
+  background-color: colors.$color-bg;
+  border-width: 0;
+  font-size: 1rem;
+  font-family: "Hind Vadodara", serif;
+  color: colors.$color-text-light;
+
+  &:focus-within {
+    outline: none;
+  }
+}
+
+.react-datepicker__day {
+  &--today {
+    color: colors.$color-brand !important;
+  }
+
+  &--selected {
+    background-color: colors.$color-brand !important;
+    color: colors.$color-white !important;
+  }
+
+  &--keyboard-selected {
+    background-color: colors.$color-brand !important;
+    color: colors.$color-white !important;
+  }
+}
